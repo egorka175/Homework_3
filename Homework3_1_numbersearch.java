@@ -7,14 +7,19 @@ public class Homework3_1_numbersearch {
 
         System.out.println("Введите число: ");
         int numToFind = s.nextInt();
-        int i=0;
+int n=0;
+        for (int i = 0; i < nums.length; i++) {
             int val = nums[i];
-            if(val == numToFind){
-                System.out.println("Заданное число входит в массив nums");
+            if (val == numToFind) {
+                n++;
             }
-            else{
-                System.out.println("Данное число в массиве не найдено");
-            }
+        }
+            if(n!=0){
+            System.out.println("Заданное число входит в массив nums");
+        } else {
+            System.out.println("Данное число в массиве не найдено");
+        }
+
 
 
     }
